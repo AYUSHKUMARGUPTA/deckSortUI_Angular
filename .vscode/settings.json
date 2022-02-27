@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/170faef8-5afd-460a-8ddc-d490af881a74/resourceGroups/DeckSort/providers/Microsoft.Web/sites/CardDeckAngularUI",
+    "appService.deploySubpath": "dist/cardSortUI"
+}

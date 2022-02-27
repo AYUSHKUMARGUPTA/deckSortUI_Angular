@@ -1,0 +1,16 @@
+.main-display-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 2% 0 2%;
+    height: 55em;
+    overflow-y: auto;
+}
+.card-Containers{
+    width: 50%;
+    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-wrap: wrap;
+}

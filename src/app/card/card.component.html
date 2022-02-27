@@ -1,0 +1,47 @@
+<div class="main-card" *ngIf="type=='number'">
+    <div class="top">
+        {{ wholeChar }}
+    </div>
+    <div class="middle">
+        <div class="diamond image-card" *ngIf="lastChar == 'D'"
+            style="background-image: url('assets/Icons/diamond.png')"></div>
+        <div class="clubs image-card" *ngIf="lastChar == 'C'" style="background-image: url('assets/Icons/clubs.jpeg')">
+        </div>
+        <div class="spade image-card" *ngIf="lastChar == 'S'" style="background-image: url('assets/Icons/spade.png')">
+        </div>
+        <div class="hearts image-card" *ngIf="lastChar == 'H'" style="background-image: url('assets/Icons/heart.jpeg')">
+        </div>
+    </div>
+    <div class="bottom">
+        {{ wholeChar }}
+    </div>
+</div>
+<div class="main-card" *ngIf="type=='suit'">
+    <div class="top">
+        {{ wholeChar }}
+    </div>
+    <div class="middle">
+        <div class="king image-card" *ngIf="firstChar == 'K'" style="background-image: url('assets/Icons/king.png')">
+        </div>
+        <div class="queen image-card" *ngIf="firstChar == 'Q'" style="background-image: url('assets/Icons/queen.jpeg')">
+        </div>
+        <div class="jack image-card" *ngIf="firstChar == 'J'" style="background-image: url('assets/Icons/jack.jpeg')">
+        </div>
+        <div class="ace image-card" *ngIf="firstChar == 'A'" style="background-image: url('assets/Icons/ace.png')">
+        </div>
+    </div>
+    <div class="bottom">
+        {{ wholeChar }}
+    </div>
+</div>
+<div class="main-card" *ngIf="type=='special'">
+    <div class="top">
+        {{ wholeChar }}
+    </div>
+    <div class="middle">
+        <div class="joker image-card" style="background-image: url('assets/Icons/joker.jpeg')"></div>
+    </div>
+    <div class="bottom">
+        {{ wholeChar }}
+    </div>
+</div>
